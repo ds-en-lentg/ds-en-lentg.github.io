@@ -52,7 +52,7 @@ angular.module('daisy', ['ngRoute', 'angular-carousel']).filter('unsafe', functi
 }).factory('helper', function($http) {
   var obj;
   obj = {};
-  $http.get('/js/lights.json', {
+  $http.get('/js/en.json', {
     cache: true
   }).success(function(rs) {
     obj.lights = rs;
